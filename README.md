@@ -10,18 +10,6 @@ java code for kyutech students.
 
  - java
 
-## Usage
-
-sample for class.
-
-## Features
-
-simple
-
-## Reference
-
-you know it.
-
 ## Author
 
 [mio256](https://github.com/mio256)

@@ -35,9 +35,29 @@ class BISum {
  *
  */
 
-class BISum2 /* fill here */ {
+class BISum2 extends BISum {
+    private BigInteger m;
 
-    /* fill here */
+    BISum2() {
+        super();
+        this.m = BigInteger.ONE;
+    }
+
+    void setMultiplier(BigInteger m) {
+        this.m = m;
+    }
+
+    void add(BigInteger x) {
+        super.add(x.multiply(m));
+    }
+
+    BigInteger getSum() {
+        return super.getSum();
+    }
+
+    BigInteger getMultiplier() {
+        return m;
+    }
 
 }
 

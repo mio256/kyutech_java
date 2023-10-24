@@ -1,8 +1,18 @@
 import java.io.*;
 
 // CapitalizePrintStream を PrintStream を継承してここに定義
-class CapitalizePrintStream /* fill here */ {
-    /* fill here */
+class CapitalizePrintStream extends PrintStream {
+    CapitalizePrintStream(OutputStream os) {
+        super(os);
+    }
+
+    public void println(String s) {
+        super.println(s.toUpperCase());
+    }
+
+    public void println() { //
+        println("");
+    }
 }
 
 class CapitalizePrintStreamCheck {

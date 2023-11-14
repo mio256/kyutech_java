@@ -44,7 +44,7 @@ class RichStringPair extends StringPair
 // RichStringPair の動作確認
 class RichStringPairCheck {
     public static void main(String [] args) {
-        // 拡張forでの使用：２つの要素を生成する 
+        // 拡張forでの使用：２つの要素を生成する
         RichStringPair pair = new RichStringPair("Hello", "World");
         for(String s : pair) {
             System.out.println("s = " + s);
@@ -63,4 +63,3 @@ class RichStringPairCheck {
         }
     }
 }
-

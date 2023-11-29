@@ -3,30 +3,41 @@
  */
 
 // この演習課題で投げられる例外の定義
-class NonPositiveException extends Exception { }
-class OddNumberException extends Exception { }
+class NonPositiveException extends Exception {
+}
+
+class OddNumberException extends Exception {
+}
 
 // 実装すべきクラス
 class Div2 {
     // 正の偶数を受け取って、その 1/2 を返すメソッド
     // 正の数でなければ NonPositiveException を投げ、
     // 正だけど偶数でなければ OddNumberException を投げる
-    int div2(int x) /* fill here */ 
+    int div2(int x) throws NonPositiveException, OddNumberException {
+        if (x <= 0) {
+            throw new NonPositiveException();
+        } else if (x % 2 != 0) {
+            throw new OddNumberException();
+        } else {
+            return x / 2;
+        }
+    }
 }
 
 // Div2 のチェック
 class Div2Check {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         Div2 d = new Div2();
-        int [] is = {4, 0, -3, 3}; // 配列の初期化構文を使っている
-        for(int i : is) {
+        int[] is = { 4, 0, -3, 3 }; // 配列の初期化構文を使っている
+        for (int i : is) {
             System.out.print("div2(" + i + ") ");
             try {
                 int res = d.div2(i);
                 System.out.println("= " + res);
-            } catch(NonPositiveException e) {
+            } catch (NonPositiveException e) {
                 System.out.println(" :: NonPositiveException");
-            } catch(OddNumberException e) {
+            } catch (OddNumberException e) {
                 System.out.println(" :: OddNumberException");
             }
         }

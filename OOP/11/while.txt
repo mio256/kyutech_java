@@ -1,0 +1,22 @@
+# y = 0, x = 10 にする
+store y
+10
+store x
+
+# x が 0 になるまで繰り返す
+while x:
+	# ブロック内はコメントもタブが必要
+	# x = x - 1
+	load x
+	- 1
+	store x
+	# y = y + 20
+	load y
+	+ 20
+	store y
+	# 現在の y と x を表示。
+	# puts で文字列を、print で変数を表示。
+	puts "y="
+	print y
+	puts "x="
+	print x

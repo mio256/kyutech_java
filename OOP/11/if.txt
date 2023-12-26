@@ -1,0 +1,13 @@
+# x = 10, z = 0 とする
+10
+store x
+0
+store z
+
+# x != 0 なので、本体実行
+if x:
+	puts "this line is executed\n"
+
+# z == 0 なので、本体は実行されない
+if z:
+	puts "this line is not executed\n"

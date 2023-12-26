@@ -1,0 +1,46 @@
+# フィボナッチ数を計算する関数。
+# print のコメントアウトを外せば動きが追えるだろう。
+def fib n:
+	# puts "n="
+	# print n
+	if n:
+		- 1
+		store x
+		if x:
+			# fib(n-1) の計算
+			call fib x
+			store w
+			# puts "w="
+			# print w
+			
+			# fib(n-2) の計算
+			load x
+			- 1
+			store x
+			call fib x
+			# store y
+			# puts "y="
+			# print y
+			
+			# fib(n-1) と fib(n-2) の結果を足す
+			+ w
+			
+			# store z
+			# puts "z="
+			# print z
+			return
+		1
+		return
+	1
+
+# fib 10 の計算
+10
+store x
+call fib x
+
+# 結果の出力
+puts "fib "
+print x
+puts " = "
+store y
+print y

@@ -1,0 +1,22 @@
+# 階乗計算の関数。
+# print のコメントアウトを外せば動きが追えるだろう。
+def fact n:
+	# print n
+	if n:
+		-1
+		store x
+		call fact x
+		*n
+		# store y
+		# print y
+		return
+	1
+
+# fact 5 の計算
+5
+store x
+call fact x
+
+# 結果の出力
+store y
+print y

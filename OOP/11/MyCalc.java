@@ -195,7 +195,7 @@ class MyCalc {
         System.out.println(
                 String.format("OPENAI_KEY : %s.", System.getenv("OPENAI_KEY")));
         System.out.println(
-                String.format("DEEPL_KEY : %s.", System.getenv("DEEPL_KEY")))
+                String.format("DEEPL_KEY : %s.", System.getenv("DEEPL_KEY")));
         ArrayList<Command<BigInteger>> comms = new ArrayList<Command<BigInteger>>();
         comms.add(new EmptyCommand<BigInteger>());
         comms.add(new IntValue());

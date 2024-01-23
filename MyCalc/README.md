@@ -4,5 +4,4 @@
 2. `mv .env.example .env`
 3. set these in `.env`
 4. `export $(cat .env | grep -v ^#)  `
-5. `javac Calculator.java MyCalc.java`
-6. `java MyCalc`
+5. `mvn exec:java`
